@@ -1,0 +1,16 @@
+1. version, date
+ - base ver : vC1.04, d230623 -> vD1.04, d251208
+2. 수정 내용
+ - PLANT FRA Bug Fix(Center 위치 틀어짐 현상)
+ - Reverse Calibration Bug Fix(Time Error)
+ - SAL Function Bug Fix(Adaptive Hold, Bottom Hold 기능 수정)
+ - CF Slope 음수일 경우 CAL FLAG 추가(CAL FLAG = 4)
+ - Overshoot Reduction 제거(연산 마진 확보)
+3. 수행 평가 항목 및 결과 
+ - Reset -> Plant Fra Set -> Center -> FRA Mode 진입 시 Center Code 일정하게 나오는 것 확인
+ - ADC Clock 변경하며 Reverse Calibration 시 동일 시간으로 측정 확인
+ - SAL 모드 Adaptive Hold, Bottom Hold 전류 확인 시 정상 확인
+ - 펌웨어 자체 테스트로 음수 넣어 CAL FLAG 4 뜨는 것 확인
+ - CPD2523 PRJ로 C104와 비교하여 테스트 시 이상 없음 확인
+4. 예상 문제점 
+ - X 
